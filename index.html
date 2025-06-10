@@ -20,7 +20,12 @@
         }
     </style>
 </head>
-<body>
+<script>
+  if (location.hostname === "www.kairu.pro") {
+    location.replace("https://kairu.pro" + location.pathname + location.search + location.hash);
+  }
+</script>
+    <body>
     <img src="kairu-logo.jpg" alt="Kaïru Logo">
 </body>
 </html>
